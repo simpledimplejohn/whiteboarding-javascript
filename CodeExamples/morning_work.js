@@ -1,11 +1,20 @@
-const array = [1,2,3,4,5,6,7]
+// create a random number between two values
 
-for (let potato of array ) {
-    potato = potato + 8
-    // console.log(potato)
+const name = ["bob", "fred", "tom", "buzz", "max"];
+const color = ["blue","red","orange","red","green"];
+const ageArr = [];
+const age = Math.random(); //gives a num between 0-1
+
+
+for(let i=0;i<5;i++) {
+    age * 
+    console.log(age)
 }
 
-array.forEach((e)=>{
-    e = e +1345
-    console.log(e)
-})
+
+function makeRandom() {
+    for(let i=0;i<5;i++) {
+
+    }
+}
+
