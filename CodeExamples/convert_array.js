@@ -28,6 +28,8 @@ let nums = [1,3,4,1,2,3,1]
 
 /*
 tasks, count the array
+loop through the array and store the following information
+- have I seen this number yet?
 
 */
 
@@ -38,7 +40,14 @@ tasks, count the array
 var findMatrix = function(nums) {
     let arrLength = 0
     arrLength = nums.length
-    console.log("array size = ", arrLength,"\n",nums)
+    let numCounter = {}
+    for (let num in nums) {
+        console.log(num, nums[num])
+    }
+    
+
+    // console.log("Welcome to JohnProgram\nAnalyzing Current Array\n.........\narray size = ", arrLength,"\n",nums)
+    return nums 
 };
 
 findMatrix(nums)
