@@ -25,6 +25,7 @@ It can be shown that we cannot have less than 3 rows in a valid array.
 */
 
 let nums = [1,3,4,1,2,3,1]
+const numsMap = new Map();
 
 /*
 tasks, count the array
@@ -38,16 +39,25 @@ loop through the array and store the following information
  * @return {number[][]}
  */
 var findMatrix = function(nums) {
+    
+    let count = 0
+    let previous = 0
     let arrLength = 0
     arrLength = nums.length
-    let numCounter = {}
-    for (let num in nums) {
-        console.log(num, nums[num])
+    // add to map
+    for (let num in nums ) {
+        numsMap.set(num,nums[num])
+    }
+    // check for distinct
+    for (let num in nums ) {
+        
+
+        
     }
     
 
     // console.log("Welcome to JohnProgram\nAnalyzing Current Array\n.........\narray size = ", arrLength,"\n",nums)
-    return nums 
+    return numsMap
 };
 
-findMatrix(nums)
+console.log(findMatrix(nums))
