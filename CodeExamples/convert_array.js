@@ -26,12 +26,19 @@ It can be shown that we cannot have less than 3 rows in a valid array.
 
 let nums = [1,3,4,1,2,3,1]
 
+/*
+tasks, count the array
+
+*/
+
 /**
  * @param {number[]} nums
  * @return {number[][]}
  */
 var findMatrix = function(nums) {
-    console.log(nums)
+    let arrLength = 0
+    arrLength = nums.length
+    console.log("array size = ", arrLength,"\n",nums)
 };
 
 findMatrix(nums)
