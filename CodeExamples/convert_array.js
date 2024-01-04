@@ -24,6 +24,8 @@ It can be shown that we cannot have less than 3 rows in a valid array.
 
 */
 
+// Condition #1 If the array has no duplicates, then return the array without changes 
+
 let num1 = [1, 3, 4, 1, 2, 3, 1]
 let num2 = [1,2,3,4,5,6]
 let nums = [1,1,1,1,1,1]
@@ -46,11 +48,12 @@ var findMatrix = function (nums) {
         for (let num in nums) {
             console.log(nums[num])
             
+
             if (numSet.has(nums[num])== true) {
+                // if the numbers do match then they are not duplicates
                 tempArr.push(nums[num])
                 console.log("got here")
             } else {
-
                 console.log("got here 2")
             }
         }
