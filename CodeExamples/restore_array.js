@@ -28,17 +28,28 @@ let arr = [[2,1],[3,4],[3,2]]
 
 // idea, look for a numbers that appeare twice and numbers that appeare once
 // can be multiple correct answers 
+let test = ((e)=>
+    {
+        return e 
+    }
+)
+
+console.log("test",test(1))
 
 let thisfunction = function(arr) {
     let pair_arr = []
     let single_arr = []
-    let mapholder = new Map()
+    let mapArr = new Map()
+
     for (i in arr) {
-        console.log(arr[i])
         
+        for (i in arr) {
+            
+            mapArr.set(arr[0],arr[1])
+        }
         
     }
-    return "answer"
+    return mapArr
 }
 
 console.log(thisfunction(arr))
