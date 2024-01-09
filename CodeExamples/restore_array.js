@@ -7,10 +7,7 @@ It is guaranteed that every adjacent pair of elements nums[i] and nums[i+1] will
 
 Return the original array nums. If there are multiple solutions, return any of them.
 
- 
-
 Example 1:
-
 Input: adjacentPairs = [[2,1],[3,4],[3,2]]
 Output: [1,2,3,4]
 Explanation: This array has all its adjacent pairs in adjacentPairs.
@@ -26,3 +23,22 @@ Example 3:
 Input: adjacentPairs = [[100000,-100000]]
 Output: [100000,-100000]
 */
+
+let arr = [[2,1],[3,4],[3,2]]
+
+// idea, look for a numbers that appeare twice and numbers that appeare once
+// can be multiple correct answers 
+
+let thisfunction = function(arr) {
+    let pair_arr = []
+    let single_arr = []
+    let mapholder = new Map()
+    for (i in arr) {
+        console.log(arr[i])
+        
+        
+    }
+    return "answer"
+}
+
+console.log(thisfunction(arr))

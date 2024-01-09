@@ -7,9 +7,16 @@ Map
 
 */
 // Array
-let theArray = [3,6,7, 3,9,11,2,9]
+let theArray = [3,6,7,3,9,11,2,9]
 theArray.push(5)
 // console.log(theArray)
+
+// array methods
+let array_methods = function(arr) {
+    return arr
+}
+
+console.log(array_methods)
 
 // OBJECTS
 let newObject = {}
