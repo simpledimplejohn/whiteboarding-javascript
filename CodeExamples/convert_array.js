@@ -32,7 +32,7 @@ let nums = [1,1,1,1,1,1]
 const numSet = new Set();
 let finalnums = []
 
-var findMatrix = function (nums) {
+let findMatrix = function (nums) {
 
     // add to Set 
     for (let num in nums) {

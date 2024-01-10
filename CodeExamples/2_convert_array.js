@@ -5,7 +5,7 @@ const numSet = new Set();
 const numMap = new Map();
 let finalnums = []
 
-var findMatrix = function (nums) {
+let findMatrix = function (nums) {
 
 
     let tempArr = []

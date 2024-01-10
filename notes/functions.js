@@ -2,7 +2,8 @@
 
 // with return will need {} added
 let test = ((e)=>
-    {
+    {   
+        test = test + 1
         return e 
     }
 )
