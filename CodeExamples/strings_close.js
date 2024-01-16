@@ -7,9 +7,7 @@ Operation 2: Transform every occurrence of one existing character into another e
 For example, aacabb -> bbcbaa (all a's turn into b's, and all b's turn into a's)
 You can use the operations on either string as many times as necessary.
 
-Given two strings, word1 and word2, return true if word1 and word2 are close, and false otherwise.
-
- 
+Given two strings, word1 and word2, return true if word1 and word2 are close, and false otherwise. 
 
 Example 1:
 
@@ -34,25 +32,34 @@ Apply Operation 2: "baaccc" -> "abbccc"
 */
 
 let close_string_function = (word1,word2) => {
+    // if strings match then true
+    if(word1 === word2 ) {
+        return true 
+    }
     // check strings are the same length
     if(word1.length !== word2.length) {
         return false
     }
-    
     // check strings contain the same characters
-
+    
     for (i in word1) {
-        console.log(word1[i])
         if(word2.includes(word1[i]) === false) {
          return false
         }
     }
-    
-    
-
+    // if one character is different return true
+    let count = 0
+    for (i in word1) {
+        if(word1[i] !== word2[i]) {
+            count ++
+        }
+    }
+    if (count > 2) {
+        return false 
+    }
     return true
 
 }
 
 
-console.log("test",close_string_function("test","t2et"))
+console.log("humm",close_string_function("abbzzca","babzzcz"))
