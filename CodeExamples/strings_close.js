@@ -32,3 +32,27 @@ Apply Operation 1: "cabbba" -> "caabbb"
 Apply Operation 2: "caabbb" -> "baaccc"
 Apply Operation 2: "baaccc" -> "abbccc"
 */
+
+let close_string_function = (word1,word2) => {
+    // check strings are the same length
+    if(word1.length !== word2.length) {
+        return false
+    }
+    
+    // check strings contain the same characters
+
+    for (i in word1) {
+        console.log(word1[i])
+        if(word2.includes(word1[i]) === false) {
+         return false
+        }
+    }
+    
+    
+
+    return true
+
+}
+
+
+console.log("test",close_string_function("test","t2et"))
